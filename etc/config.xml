@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <smile_elasticsuite_autocomplete_settings>
+            <seller_autocomplete>
+                <max_size>5</max_size>
+            </seller_autocomplete>
+        </smile_elasticsuite_autocomplete_settings>
+
+        <lof_elasticsuite_seller>
+            <seller_settings>
+                <max_result>5</max_result>
+            </seller_settings>
+        </lof_elasticsuite_seller>
+    </default>
+</config>

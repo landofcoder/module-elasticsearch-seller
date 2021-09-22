@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="lofSellerPageSearchIndexHandler" type="Smile\ElasticsuiteCore\Indexer\GenericIndexerHandler">
+        <arguments>
+            <argument name="indexName" xsi:type="string">lof_marketplace_seller</argument>
+            <argument name="typeName" xsi:type="string">seller</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Lof\ElasticsuiteSeller\Model\Seller\Indexer\Fulltext">
+        <arguments>
+            <argument name="indexerHandler" xsi:type="object">lofSellerPageSearchIndexHandler</argument>
+        </arguments>
+    </type>
+
+    <type name="Lof\MarketPlace\Model\Seller">
+        <plugin name="lof_elasticsuite_seller_reindex_seller_after_seller_save" type="Lof\ElasticsuiteSeller\Plugin\Indexer\Seller\Save\ReindexSellerAfterSave" />
+    </type>
+</config>

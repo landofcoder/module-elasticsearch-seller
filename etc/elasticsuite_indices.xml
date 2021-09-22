@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<indices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Smile_ElasticsuiteCore:etc/elasticsuite_indices.xsd">
+    <index identifier="lof_marketplace_seller" defaultSearchType="seller">
+        <type name="lof_marketplace_seller" idFieldName="seller_id">
+            <mapping>
+                <!-- Static fields handled by the base indexer (not datasource) -->
+                <field name="seller_id" type="integer" />
+                <field name="name" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="url_key" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="description" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="address" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="shop_title" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="company_locality" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="country" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="city" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="region" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+                <field name="company" type="text">
+                    <isSearchable>1</isSearchable>
+                    <isUsedInSpellcheck>1</isUsedInSpellcheck>
+                </field>
+            </mapping>
+        </type>
+    </index>
+</indices>
