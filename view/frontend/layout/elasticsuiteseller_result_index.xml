@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    layout="1column"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <head>
+        <title>MarketPlace Vendors results Default Page</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block
+                class="Lof\ElasticsuiteSeller\Block\Seller\Result"
+                name="elasticsuite_marketplace_seller_result"
+                template="marketplace_seller_result.phtml"
+                ifconfig="lof_elasticsuite_seller/seller_settings/enabled"
+            />
+        </referenceContainer>
+    </body>
+</page>

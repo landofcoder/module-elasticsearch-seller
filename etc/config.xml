@@ -9,6 +9,7 @@
 
         <lof_elasticsuite_seller>
             <seller_settings>
+                <enabled>1</enabled>
                 <max_result>5</max_result>
             </seller_settings>
         </lof_elasticsuite_seller>

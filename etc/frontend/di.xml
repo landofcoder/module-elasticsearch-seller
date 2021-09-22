@@ -10,7 +10,7 @@
     <type name="Smile\ElasticsuiteCore\Block\Search\Form\Autocomplete">
         <arguments>
             <argument name="rendererList" xsi:type="array">
-                <item name="blog_post" xsi:type="array">
+                <item name="seller" xsi:type="array">
                     <item name="title" xsi:type="string">MarketPlace Vendors</item>
                     <item name="template" xsi:type="string">Lof_ElasticsuiteSeller/autocomplete/seller</item>
                 </item>

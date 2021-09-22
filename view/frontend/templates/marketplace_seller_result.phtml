@@ -1,0 +1,38 @@
+<?php /** @var \Lof\ElasticsuiteSeller\Block\Seller\Result */  ?>
+<?php $helper = $this->helper("Lof\ElasticsuiteSeller\Helper\Configuration"); ?>
+<?php $showSellerImage = true; ?>
+<?php if ($helper->isEnabled()): ?>
+<div class="search results sellerlist">
+    <h2><?= __('Results in marketplace vendor.')?></h2>
+
+    <ul>
+        <?php foreach ($block->getSellerCollection() as $_seller) : ?>
+            <li>
+                <div class="seller-item">
+                    <?php if ($showSellerImage) : ?>
+                    <div class="seller-image">
+                        <a href="<?= $block->escapeUrl($_seller->getUrl()) ?>" title="<?= $_seller->getName(); ?>">
+                            <img src="<?= $block->escapeUrl($_seller->getThumbnailUrl()) ?>"/>
+                        </a>
+                    </div>
+                    <?php endif; ?>
+                    <div class="seller-name">
+                        <a href="<?= $block->escapeUrl($_seller->getUrl()) ?>"
+                            title="<?= $_seller->getName(); ?>">
+                            <?= $block->escapeHtml($_seller->getName()) ?>
+                        </a>
+                    </div>
+                    <?php if ($_seller->getVerifyStatus() == '1'): ?>
+                        <div class="seller-verify">
+                            <i class="mkpl-verify"></i><span><?= $block->escapeHtml(__('Verified')) ?></span>
+                        </div>
+                    <?php endif; ?>
+                    <div class="mkpl-address seller-info">
+                        <i class="fa fa-map-marker"></i> <?= $block->escapeHtml($_seller->getAddress()) ?>
+                    </div>
+                </div>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+</div>
+<?php endif; ?>

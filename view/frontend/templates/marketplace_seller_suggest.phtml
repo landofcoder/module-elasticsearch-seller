@@ -1,0 +1,15 @@
+<?php /** @var \Lof\ElasticsuiteSeller\Block\Seller\Suggest */  ?>
+<?php $helper = $this->helper("Lof\ElasticsuiteSeller\Helper\Configuration"); ?>
+<?php if ($block->canShowBlock() && $helper->isEnabled()): ?>
+   <div class="search results">
+      <h2><?= __('Results in marketplace vendors.')?></h2>
+
+       <ul>
+       <?php foreach ($block->getSellerCollection() as $_seller) : ?>
+            <li><a href="<?= $block->escapeUrl($_seller->getUrl()) ?>"
+                        title="<?= $block->escapeHtmlAttr($_seller->getName()) ?>"><?= $block->escapeHtml($_seller->getName()) ?></a></li>
+       <?php endforeach; ?>
+       </ul>
+       <a href="<?= $block->getShowAllUrl()?>"><?= __('Show more.')?></a>
+   </div>
+<?php endif; ?>

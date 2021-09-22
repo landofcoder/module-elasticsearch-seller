@@ -9,6 +9,12 @@
 
             <group id="seller_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Setting</label>
+
+                <field id="enabled" translate="label" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enabled Index</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Enabled/Disable Indexer Global (if option <strong>If seller is searchable</strong> is enabled for seller account)]]></comment>
+                </field>
                 <field id="max_result" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Max result</label>
                     <validate>integer</validate>

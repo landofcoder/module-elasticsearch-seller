@@ -1,9 +1,9 @@
 ## ElasticSuite Seller search for Landofcoder MarketPlace
 
 
-This module connecting between each other [ElasticSuite](https://github.com/Smile-SA/elasticsuite) search extension and [Landofcoder](https://landofcoder.com/magento/magento-2-extensions.html) [Magento 2 Blog extension](https://landofcoder.com/magento-2-blog-extension.html)
+This module connecting between each other [ElasticSuite](https://github.com/Smile-SA/elasticsuite) search extension and [Landofcoder](https://landofcoder.com/magento/magento-2-extensions.html) [Magento 2 Marketplace extension](https://landofcoder.com/magento-2-seller-extension.html)
 
-It allows to index Magento 2 Blog posts into the search engine and display them into the autocomplete results, and also on the search result page.
+It allows to index Magento 2 Marketplace sellers into the search engine and display them into the autocomplete results, and also on the search result page.
 
 ### Requirements
 
@@ -24,6 +24,6 @@ The module requires :
 
 ``` bin/magento setup:upgrade ```
 
-4. Process a full reindex of the Blog Post search index
+4. Process a full reindex of the Marketplace Post search index
 
 ``` bin/magento index:reindex elasticsuite_seller_fulltext ```
