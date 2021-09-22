@@ -19,7 +19,7 @@ class DataProvider implements DataProviderInterface
     /**
      * Autocomplete type
      */
-    const AUTOCOMPLETE_TYPE = "seller";
+    const AUTOCOMPLETE_TYPE = "lof_marketplace_seller";
 
     /**
      * Autocomplete result item factory
@@ -118,13 +118,6 @@ class DataProvider implements DataProviderInterface
                 $result[] = $this->itemFactory->create([
                         'title' => $seller->getName(),
                         'url'   => $seller->getUrl(),
-                        'url_key' => $seller->getUrlKey(),
-                        'address' => $seller->getAddress(),
-                        'company_locality' => $seller->getCompanyLocality(),
-                        'country' => $seller->getCountry(),
-                        'city' => $seller->getCity(),
-                        'region' => $seller->getRegion(),
-                        'company' => $seller->getCompany(),
                         'type' => $this->getType()]);
                 $i++;
                 if ($i == $this->maxAutocompleteResults) {
