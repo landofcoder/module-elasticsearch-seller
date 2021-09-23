@@ -3,7 +3,7 @@
 
     <virtualType name="lofSellerPageSearchIndexHandler" type="Smile\ElasticsuiteCore\Indexer\GenericIndexerHandler">
         <arguments>
-            <argument name="indexName" xsi:type="string">lof_marketplace_seller</argument>
+            <argument name="indexName" xsi:type="string">marketplace_seller</argument>
             <argument name="typeName" xsi:type="string">seller</argument>
         </arguments>
     </virtualType>

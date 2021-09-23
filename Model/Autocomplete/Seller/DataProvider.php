@@ -19,7 +19,7 @@ class DataProvider implements DataProviderInterface
     /**
      * Autocomplete type
      */
-    const AUTOCOMPLETE_TYPE = "lof_marketplace_seller";
+    const AUTOCOMPLETE_TYPE = "marketplace_seller";
 
     /**
      * Autocomplete result item factory

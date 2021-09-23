@@ -6,7 +6,7 @@
         <referenceBlock name="top.search">
             <arguments>
                 <argument name="rendererList" xsi:type="array">
-                    <item name="seller" xsi:type="array">
+                    <item name="marketplace_seller" xsi:type="array">
                         <item name="title" xsi:type="string" translate="true">MarketPlace Vendors</item>
                         <item name="template" xsi:type="string">Lof_ElasticsuiteSeller/autocomplete/seller</item>
                     </item>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <indices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:noNamespaceSchemaLocation="urn:magento:module:Smile_ElasticsuiteCore:etc/elasticsuite_indices.xsd">
-    <index identifier="lof_marketplace_seller" defaultSearchType="seller">
-        <type name="lof_marketplace_seller" idFieldName="seller_id">
+    <index identifier="marketplace_seller" defaultSearchType="seller">
+        <type name="seller" idFieldName="seller_id">
             <mapping>
                 <!-- Static fields handled by the base indexer (not datasource) -->
                 <field name="seller_id" type="integer" />

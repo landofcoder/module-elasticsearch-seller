@@ -2,6 +2,6 @@
 <requests xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:noNamespaceSchemaLocation="urn:magento:module:Smile_ElasticsuiteCore:etc/elasticsuite_search_request.xsd">
 
-        <request name="seller_search_container" label="Marketplace Seller Search" index="lof_marketplace_seller" type="seller" fulltext="true" />
+        <request name="seller_search_container" label="Marketplace Seller Search" index="marketplace_seller" type="seller" fulltext="true" />
 
 </requests>

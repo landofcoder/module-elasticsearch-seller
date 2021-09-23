@@ -121,7 +121,7 @@ class Suggest extends \Magento\Framework\View\Element\Template
      */
     public function getShowAllUrl()
     {
-        return $this->getUrl('ElasticsuiteSeller/result', ['q' => $this->getQueryText()]);
+        return $this->getUrl('elasticsuiteseller/result', ['q' => $this->getQueryText()]);
     }
 
     /**

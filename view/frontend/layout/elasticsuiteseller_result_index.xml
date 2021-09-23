@@ -5,7 +5,7 @@
     xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
 >
     <head>
-        <title>MarketPlace Vendors results Default Page</title>
+        <title>Marketplace Vendor results</title>
     </head>
     <body>
         <referenceContainer name="content">
@@ -14,7 +14,14 @@
                 name="elasticsuite_marketplace_seller_result"
                 template="marketplace_seller_result.phtml"
                 ifconfig="lof_elasticsuite_seller/seller_settings/enabled"
-            />
+            >
+                <block class="Lof\MarketPlace\Block\Toolbar" name="lofmarketplace_toolbar" template="Lof_MarketPlace::toolbar.phtml">
+					<block class="Magento\Theme\Block\Html\Pager" name="seller_list_toolbar_pager"/>
+				</block>
+            </block>
         </referenceContainer>
+        <referenceContainer name="left">
+			<block class="Lof\MarketPlace\Block\Group\View" name="lofmarketplace.group.list" ifconfig="lof_elasticsuite_seller/seller_settings/enabled"/>
+		</referenceContainer>
     </body>
 </page>
