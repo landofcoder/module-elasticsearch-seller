@@ -116,7 +116,7 @@ class DataProvider implements DataProviderInterface
             /** @var \Lof\MarketPlace\Model\seller $seller */
             foreach ($sellerCollection as $seller) {
                 $result[] = $this->itemFactory->create([
-                        'title' => $seller->getTitle(),
+                        'title' => $seller->getName(),
                         'url'   => $seller->getUrl(),
                         'type' => $this->getType()]);
                 $i++;
