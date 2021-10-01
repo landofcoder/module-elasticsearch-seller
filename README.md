@@ -18,6 +18,12 @@ The module requires :
 
 1. Enable it
 
+Setup module via composer:
+
+```
+composer require landofcoder/module-elasticsuite-seller
+```
+
 ``` bin/magento module:enable Lof_ElasticsuiteSeller ```
 
 3. Install the module and rebuild the DI cache
